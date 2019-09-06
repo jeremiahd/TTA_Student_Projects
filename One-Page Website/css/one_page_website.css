@@ -1,0 +1,11 @@
+body {
+    font-family:        Arial, Helvetica, sans-serif;
+    font-size:          16px;
+}
+
+#contact input[type="text"] {
+    width:              400px;
+    margin:             10px;
+    border:             2px solid black;
+    border-radius:      14px;
+}
