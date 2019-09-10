@@ -1,0 +1,12 @@
+@media (max-width:480px) {
+
+	h4 {
+		color: red;
+	}
+	
+}
+
+@media (min-width:481px) {
+h4 {
+	color: blue;
+}

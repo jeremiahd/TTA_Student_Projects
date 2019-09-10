@@ -1,0 +1,21 @@
+TextWindow.Title = "Change Help"
+
+TextWindow.Write("Please input receipt total: ")
+total = TextWindow.ReadNumber()
+TextWindow.Write("Please input amount paid (at least $" + Math.Ceiling(total) + "): ")
+paid = TextWindow.ReadNumber()
+
+TextWindow.WriteLine("Processing Data...")
+Program.Delay(1000)
+
+change = paid - total
+
+If(change < 0) Then
+  TextWindow.WriteLine("Not enough money.")
+ElseIf(change > 0.01) Then
+  changeCoins = Math.Round( Math.Remainder(change,1)*100 )
+  changeBills = Math.Floor(change)
+  TextWindow.WriteLine("Distribute " + changeBills + " dollars in bills, and " + changeCoins + " cents in coins.")
+Else
+  TextWindow.WriteLine("Distribute exactly one penny.")
+EndIf  

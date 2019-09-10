@@ -1,0 +1,4 @@
+WindowTitle = "Text Window Top Output"
+TextWindow.Title = WindowTitle
+winTop = TextWindow.Top
+TextWindow.WriteLine("The top of the window is: " + winTop)

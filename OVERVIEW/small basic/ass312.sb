@@ -1,0 +1,33 @@
+'window attributes
+wWidth = 450
+wHeight = 220
+GraphicsWindow.Height = wHeight
+GraphicsWindow.Width = wWidth
+GraphicsWindow.BackgroundColor = "Black"
+
+'draw some 32x32 black squares...basic draws pixels very slow
+For i = 1 To wWidth
+  For j = 1 To wHeight
+    If(Math.Remainder(j, 32) = 0) Then
+      GraphicsWindow.SetPixel(i, j, "White")
+    EndIf
+    If(Math.Remainder(i, 32) = 0) Then
+      GraphicsWindow.SetPixel(i, j, "White")
+    EndIf
+  EndFor
+EndFor
+
+'draw a yellow window border with width 12
+GraphicsWindow.PenWidth = 12
+GraphicsWindow.PenColor = "Yellow"
+GraphicsWindow.DrawLine(1, 1, wWidth, 1)
+GraphicsWindow.DrawLine(wWidth, 1, wWidth, wHeight)
+GraphicsWindow.DrawLine(wWidth, wHeight, 1, wHeight)
+GraphicsWindow.DrawLine(1, wHeight, 1, 1)
+
+'draw some italic text with different font sizes
+GraphicsWindow.FontItalic = "true"
+For i = 1 To 5
+  GraphicsWindow.FontSize = i * 12
+  GraphicsWindow.DrawBoundText(12 + i*i*i, 8 + i*i*i, 200*i, "Step 312")
+EndFor

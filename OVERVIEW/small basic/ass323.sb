@@ -1,0 +1,84 @@
+'application settings
+topIndent = 1 'set upper margin
+leftIndent = 2 ' set left margin
+
+'initialize display strings to empty
+name = ""
+phone = ""
+
+'start main program
+Display() 'initialize display
+inName()  'input name and refresh display
+inPhone() 'input phone# and refresh display
+
+'move cursor before termination string
+TextWindow.CursorTop = 8 + topIndent
+TextWindow.CursorLeft = 0 + leftIndent
+'end main program
+
+
+' SUBROUTINES
+Sub outCursor
+  'reset cursor to output location
+  TextWindow.CursorTop = 5 + topIndent
+  TextWindow.CursorLeft = 3 + leftIndent
+EndSub
+
+Sub inCursor
+  'set input location on screen
+  TextWindow.CursorTop = 6 + topIndent
+  TextWindow.CursorLeft = 5 + leftIndent
+EndSub
+
+Sub inName
+  outCursor()
+  TextWindow.Write("Please enter your name")
+  inCursor()
+  name = TextWindow.Read() 'input name
+  If(name = "") Then
+    inName()
+  EndIf
+  Display() 'refresh display
+EndSub
+
+Sub inPhone
+  outCursor()
+  TextWindow.Write("Please enter your phone#")
+  inCursor()
+  phone = TextWindow.Read() 'input phone#
+  If(phone = "") Then
+    inPhone()
+  EndIf
+  Display() 'refresh display
+EndSub
+
+Sub Display
+  'ascii display scheme
+  TextWindow.CursorTop = topIndent
+  TextWindow.CursorLeft = leftIndent
+  TextWindow.WriteLine(" ================================================= ")
+  TextWindow.CursorLeft = leftIndent
+  TextWindow.WriteLine("| name    |                                       |")
+  TextWindow.CursorLeft = leftIndent
+  TextWindow.WriteLine("| phone   |                                       |")
+  TextWindow.CursorLeft = leftIndent
+  TextWindow.WriteLine("|                                                 |")
+  TextWindow.CursorLeft = leftIndent
+  TextWindow.WriteLine("|-------------------------------------------------|")
+  TextWindow.CursorLeft = leftIndent
+  TextWindow.WriteLine("|                                                 |")
+  TextWindow.CursorLeft = leftIndent
+  TextWindow.WriteLine("| >                                               |")
+  TextWindow.CursorLeft = leftIndent
+  TextWindow.WriteLine(" ================================================= ")
+  
+  'output name
+  TextWindow.CursorTop = 1 + topIndent
+  TextWindow.CursorLeft = 13 + leftIndent
+  TextWindow.Write(name)
+  
+  'output phone #
+  TextWindow.CursorTop = 2 + topIndent
+  TextWindow.CursorLeft = 13 + leftIndent
+  TextWindow.Write(phone)
+EndSub

@@ -1,0 +1,56 @@
+'Window Appearance
+TextWindow.Title = "First Simple Basic Program"
+TextWindow.BackgroundColor = "Black"
+TextWindow.ForegroundColor = "Yellow"
+TextWindow.Clear()
+
+'Format output area
+TextWindow.WriteLine("New User")
+TextWindow.CursorTop = 2
+TextWindow.WriteLine("Name    : ")
+TextWindow.WriteLine("Address1: ")
+TextWindow.WriteLine("Address2: ")
+
+'Format settings
+inputLine = 6
+nameLine = 2
+add1Line = 3
+add2Line = 4
+outCol = 11
+inpCol = 17
+
+'input new user's name
+TextWindow.CursorTop = inputLine
+TextWindow.Write("Input Name: ")
+name = TextWindow.Read()
+'output name
+TextWindow.CursorTop = nameLine
+TextWindow.CursorLeft = outCol
+TextWindow.Write(name)
+
+'input new user's address, line 1
+TextWindow.CursorLeft = 0
+TextWindow.CursorTop = inputLine
+TextWindow.Write("Input Address1:                           ")
+TextWindow.CursorLeft = inpCol
+add1 = TextWindow.Read()
+'output address 1
+TextWindow.CursorTop = add1Line
+TextWindow.CursorLeft = outCol
+TextWindow.Write(add1)
+
+'input new users' address, line 2
+TextWindow.CursorLeft = 0
+TextWindow.CursorTop = inputLine
+TextWindow.Write("Input Address2:                           ")
+TextWindow.CursorLeft = inpCol
+add2 = TextWindow.Read()
+'output address 2
+TextWindow.CursorTop = add2Line
+TextWindow.CursorLeft = outCol
+TextWindow.Write(add2)
+
+'program complete
+TextWindow.CursorLeft = 0
+TextWindow.CursorTop = inputLine
+TextWindow.WriteLine("New User Complete.                    ")

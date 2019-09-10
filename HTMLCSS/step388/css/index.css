@@ -1,0 +1,139 @@
+.container {
+	text-align:					center;
+}
+
+h1 {
+	margin-top:				40px;
+}
+
+
+/* MENU */
+.navbar {
+	padding:					0px;
+}
+.navbar li{
+	display:						inline;
+	background-color:		blue;
+	color:						yellow;
+	font-size:					2em;
+	font-weight:				600;
+	border-radius:				5px;
+	padding:					3px 10px 5px 10px;
+	margin:						5px;
+}
+.navbar li:hover {
+	background-color:		yellow;
+	color:						blue;
+	cursor:						pointer;
+}
+/* END MENU */
+
+
+/* PHOTO DISPLAY  */
+.photo-container {
+	position:					relative;
+	width:						480px;
+	height:						480px;
+	margin-left:				auto;
+	margin-right:				auto;
+}
+.photo-container:hover .overlay {
+	opacity:						.8;
+}
+.overlay {
+	position: 					absolute;
+	top: 							0;
+	left: 							0;
+	right:							0;
+	bottom:						0;
+	height:						100%;
+	width:						100%;
+	color:						yellow;
+	font-weight:				900;
+	font-size:					2.5em;
+	background-color:		black;	
+	opacity:						0;
+	transition:					.5s ease;
+	border-radius:				10px;
+}
+.overlay:hover {
+	opacity:						.75;
+}
+img {
+	border-radius: 			10px;
+}
+.imgText {
+	padding-top:     			30%;
+}
+/* END PHOTO DISPLAY */
+
+
+/* VIDEO DISPLAY  */
+.video-container {
+	position:					relative;
+	width:						600px;
+	height:						338px;
+	margin-left:				auto;
+	margin-right:				auto;
+}
+.video-container:hover .overlay {
+	opacity:						.8;
+}
+.video-overlay {
+	position: 					absolute;
+	top: 							0;
+	left: 							0;
+	right:							0;
+	bottom:						0;
+	height:						100%;
+	width:						100%;
+	color:						yellow;
+	font-weight:				900;
+	font-size:					2.5em;
+	background-color:		black;	
+	opacity:						0;
+	transition:					.5s ease;
+	border-radius:				10px;
+}
+.video-overlay:hover {
+	opacity:						.75;
+}
+.video {
+	border-radius: 			10px;
+}
+.vidText {
+	padding-top:     			15%;
+}
+/* END VIDEO DISPLAY */
+
+
+/* TABLE */
+table {
+	width:						50%;
+	margin-left:				auto;
+	margin-right:				auto;
+	border:						2px solid black;
+	padding:					1px;
+}
+
+th {
+	background-color:		red;
+}
+
+/* NON-TABLE COLUMNS */
+.row {
+	display:						flex;
+}
+.column {
+	color:						black;
+	height:						100px;
+	width:						500px;
+	background-color:		gray;
+	margin:						20px;
+}
+
+/* FOOTER */
+footer p:hover {
+	font-weight:				600;
+	background-color:		lightgray;
+}

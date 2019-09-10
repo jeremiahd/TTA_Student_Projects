@@ -1,0 +1,13 @@
+GraphicsWindow.Width = 150
+GraphicsWindow.Height = 150
+Turtle.X = 20
+Turtle.Y = 20
+Turtle.Show()
+
+Turtle.TurnRight()
+Turtle.Move(40)
+Turtle.Angle = 127
+Turtle.Move(50)
+Turtle.TurnLeft()
+Turtle.Move(60)
+Turtle.MoveTo(100,100)

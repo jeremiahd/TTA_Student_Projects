@@ -1,0 +1,20 @@
+'app settings
+squareSize = 150
+winWidth = 400
+winHeight = 300
+
+'initialize graphics window
+GraphicsWindow.Width = winWidth
+GraphicsWindow.Height = winHeight
+GraphicsWindow.BackgroundColor = "Blue"
+GraphicsWindow.PenColor = "Yellow"
+
+'center our square, not our turtle
+Turtle.X = (winWidth - squareSize)/2
+Turtle.Y = (winHeight + squareSize)/2
+
+'use a for loop to draw the square
+For A = 1 To 4
+  Turtle.Move(squareSize)
+  Turtle.Turn(90)
+EndFor

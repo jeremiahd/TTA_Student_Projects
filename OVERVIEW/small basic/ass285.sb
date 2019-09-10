@@ -1,0 +1,17 @@
+TextWindow.Title = "Typing Lesson #1"
+
+testLine = "Mavis Beacon used to teach typing."
+TextWindow.WriteLine("Please type the following sentence:")
+TextWindow.CursorTop = 2
+TextWindow.ForegroundColor = "Yellow"
+TextWindow.WriteLine(testLine)
+TextWindow.ForegroundColor = "White"
+
+input = TextWindow.Read()
+TextWindow.CursorTop = 5
+
+If input = testLine Then
+  TextWindow.WriteLine("That is correct!")
+Else
+  TextWindow.WriteLine("Your accuracy needs work!")
+EndIf

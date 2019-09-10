@@ -1,0 +1,52 @@
+'assign events to subroutines
+GraphicsWindow.MouseMove = mouseMove
+GraphicsWindow.MouseDown = mouseDown
+GraphicsWindow.MouseUp = mouseUp
+GraphicsWindow.KeyDown = keyDown
+GraphicsWindow.KeyUp = keyUp
+
+'machine state variables
+lastKey = ""
+mX = 0
+mY = 0
+
+Sub mouseMove
+  Display()
+EndSub
+
+Sub mouseDown
+  mX = GraphicsWindow.MouseX
+  mY = GraphicsWindow.MouseY
+  Program.Delay(.1)
+  Display()
+EndSub
+
+Sub mouseUp
+  Display()
+EndSub
+
+Sub keyDown
+  lastKey = GraphicsWindow.LastKey
+  Display()
+EndSub
+
+Sub keyUp
+  lastKey = lastKey+"(Up)"
+  Display()
+EndSub
+
+Sub Display
+  if(Mouse.IsLeftButtonDown) then
+    GraphicsWindow.DrawLine(mX, mY, GraphicsWindow.MouseX, GraphicsWindow.MouseY)
+  Elseif(Mouse.IsRightButtonDown) then
+    GraphicsWindow.SetPixel(GraphicsWindow.MouseX, GraphicsWindow.MouseY, "Red")
+  Else
+    GraphicsWindow.Clear()
+    coordDisp = "x"+GraphicsWindow.MouseX +"y"+ GraphicsWindow.MouseY
+    GraphicsWindow.DrawText(1, 1, "mouse coordinates: ")
+    GraphicsWindow.DrawText(125, 1, coordDisp)
+    
+    GraphicsWindow.DrawText(1, 20, "key: ")
+    GraphicsWindow.DrawText(30, 20, lastKey)
+  EndIf
+EndSub

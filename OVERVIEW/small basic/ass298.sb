@@ -1,0 +1,14 @@
+TextWindow.BackgroundColor = "Green"
+TextWindow.Clear()
+For A = 0 To 2
+  TextWindow.BackgroundColor = "Red"
+  TextWindow.ForegroundColor = "Black"
+  TextWindow.WriteLine("For Loop " + A)
+  B = 0
+  While(B<3)
+    TextWindow.BackgroundColor = "Blue"
+    TextWindow.ForegroundColor = "Yellow"
+    TextWindow.WriteLine("While Loop " + B)
+    B = B + 1
+  EndWhile
+EndFor
