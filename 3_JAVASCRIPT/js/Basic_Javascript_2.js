@@ -1,7 +1,7 @@
 function addForm() {
 	var x = parseFloat( document.getElementById("xValue").value );
 	var y = parseFloat( document.getElementById("yValue").value );
-	z = x + y;
+	var z = x + y;
 	outputString = x;
 	outputString += " plus ";
 	outputString += y;
