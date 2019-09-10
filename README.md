@@ -3,3 +3,5 @@ This repository holds my student projects from The Tech Academy.  I tried to kee
 Overview - This folder is from the Overview of Software Development course.  There are a few examples of sorting algorithms, a simple web page, and a dozen or so Small Basic exercises.
 
 HTMLCSS - This folder is from the HTML5 and CSS3 course.  The final project from this class is in my jeremiahd.github.io. repository, as it is hosted by github.  It can be viewed at https://jeremiahd.github.io.
+
+Javascript - This folder is from the Javascript course.
