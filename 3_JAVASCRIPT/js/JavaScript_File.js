@@ -14,3 +14,7 @@ function myFirstFunction() {
 	var result = str.fontcolor("green");
 	document.getElementById("Green_Text").innerHTML = result;
 }
+
+function keyDown() {
+	document.write("Someone pressed a key!<br/>");
+}
