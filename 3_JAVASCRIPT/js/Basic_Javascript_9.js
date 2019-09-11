@@ -9,13 +9,13 @@ function incSlide(n) {
 }
 
 /*set slide index to the slide indicated by n, and call
-	showSlides for the new index */
+ showSlides for the new index */
 function showSlide(n) {
 	showSlides(slideIndex = n);
 }
 
 /*iterate through slides and dots, set all to inactive,
-	then set active slide and dot at the correct indices */
+ then set active slide and dot at the correct indices */
 function showSlides(n) {
 	var i;
 	var slides = document.getElementsByClassName("slide");
