@@ -11,7 +11,7 @@ body {
 
 /* entire gallery container */
 .gallery {
- max-width: 100%;
+ max-width: 1000px;
  position: relative;
  margin: auto;
 }
