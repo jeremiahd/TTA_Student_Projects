@@ -1,0 +1,34 @@
+form {
+	border: .1em solid black;
+	border-radius: .5em;
+	padding: 1em;
+    display: table-cell;
+    vertical-align: middle;
+    width: 12em;
+	margin: .8em;
+	background-color: #758AA9;
+	box-shadow: 0.2em 0.2em 0.8em rgba(0,0,0,0.5);
+	transition: .1s;
+}
+form:hover {
+	background-color: #668AA9;
+}
+label {
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+	font-size: 1.05em;
+	font-weight: 400;
+}
+input[type="text"], input[type="date"] {
+	margin-bottom: 0.8em;
+	width: 100%;
+	height: 1.3em;
+}
+input[type="submit"] {
+	display: block;
+	margin-top: 0.8em;
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	
+}

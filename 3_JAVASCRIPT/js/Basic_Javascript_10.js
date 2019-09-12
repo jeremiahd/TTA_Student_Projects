@@ -1,3 +1,4 @@
+// this first function has the first and last steps in this series of exercises
 function callLoop() {
 	var a = [];
 		a[0]= "Some ";
@@ -10,6 +11,7 @@ function callLoop() {
 	}
 }
 
+// this function ended up with the middle exercises...cause i dunno why
 function constant_function() {
 	var opinionString = "";
 	{
