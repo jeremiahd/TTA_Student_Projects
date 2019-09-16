@@ -1,0 +1,57 @@
+body {
+	background-color: #ff3f3f;
+}
+
+h1, h3 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: white;
+}
+
+div {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: yellow;
+}
+
+#menuBG {
+	width: 400px;
+	height: 470px;
+	margin: 10px auto;
+}
+
+#frmMenu {
+	width: 600px;
+	height: 200px;
+}
+
+#totalPrice {
+	width: 200px;
+	height: 190px;
+	margin: 0 auto;
+	float: right;
+}
+
+.menu {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#showText {
+	width: 200px;
+	height: 190px;
+	margin: 0px auto;
+	float: left;
+}
+
+#cart {
+	top: 0;
+	margin: 0px auto;
+	width: 400px;
+	height: 200px;
+}
+
+#btnOrder {
+	margin: 10px 0px 0px 100px;
+	width: 100px;
+	height: 40px;
+}

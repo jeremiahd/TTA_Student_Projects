@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Pizza Drill Demo</title>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<meta content="width=device-width" intitial-scale="1.0" name="viewport" />
+		<link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css" />
+	</head>
+	<body>
+		<div id="menuBG">
+			<h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
+			<input id="btnOrder" type="button" onclick="getReceipt()" 
+				value="Place Order" />
+			<form id="frmMenu">
+				<div class="menu">
+					<h3>Size:</h3>
+					<input class="size" type="radio" name="Size"
+						value="Personal Pizza" />Personal Pizza<br />
+					<input class="size" type="radio" name="Size"
+						value="Small Pizza" />Small Pizza<br />
+					<input class="size" type="radio" name="Size"
+						value="Medium Pizza" />Medium Pizza<br />
+					<input class="size" type="radio" name="Size"
+						value="Large Pizza" />Large Pizza<br />
+					<input class="size" type="radio" name="Size"
+						value="Extra Large Pizza" />Extra Large Pizza<br />
+				</div>
+				<div class="menu">
+					<h3>Vegetables:</h3>
+					<input class="veg" type="checkbox" name="veg"
+						value="Onions" />Onions<br />
+					<input class="veg" type="checkbox" name="veg"
+						value="Peppers" />Peppers<br />
+					<input class="veg" type="checkbox" name="veg"
+						value="Olives" />Olives<br />
+					<input class="veg" type="checkbox" name="veg"
+						value="Mushrooms" />Mushrooms<br />
+					<input class="veg" type="checkbox" name="veg"
+						value="Pineapple" />Pineapple<br />
+				</div>
+						
+				<div class="menu">
+					<h3>Meats:</h3>
+					<input class="meats" type="checkbox" name="Meat"
+						value="Pepperoni" />Pepperoni<br />
+					<input class="meats" type="checkbox" name="Meat"
+						value="Sausage" />Sausage<br />
+					<input class="meats" type="checkbox" name="Meat"
+						value="Canadian Bacon" />Canadian Bacon<br />
+					<input class="meats" type="checkbox" name="Meat"
+						value="Ground Beef" />Ground Beef<br />
+					<input class="meats" type="checkbox" name="Meat"
+						value="Anchovy" />Anchovy<br />
+					<input class="meats" type="checkbox" name="Meat"
+						value="Chicken" />Chicken<br />
+					<input class="meats" type="checkbox" name="Meat"
+						value="Tofu" />Tofu<br />
+				</div>
+				<div id="cart">
+					<div id="showText"></div>
+					<div id="totalPrice"></div>
+				</div>
+			</form>
+		</div>
+		<script = src="Pizza_Javascript/Pizza.js"></script>
+	</body>
+</html>
