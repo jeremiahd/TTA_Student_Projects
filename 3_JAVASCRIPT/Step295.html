@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Step 295</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<p id="test" onclick="getTitle()">Click Me!</p>
+		<script>
+			function getTitle() {
+				var thisTitle = document.title;
+				document.getElementById("test").innerHTML = thisTitle;
+			}
+		</script>
+	</body>
+</html>

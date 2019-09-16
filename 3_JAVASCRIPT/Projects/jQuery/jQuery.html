@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="us-EN">
+	<head>
+		<title>jQuery</title>
+		<meta charset="utf-8" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+	<script>
+		$(document).ready(function() {
+			$("html").append(
+				"<body>\
+					<div id='container'>\
+						<div id='inner'>\
+							<h1>Did you know js syntax can get uglier?!!</h1>\
+							<p id='1'>Paragraph 1</p>\
+							<p id='2'>Paragraph 2</p>\
+							<p id='3'>Click Me</p>\
+						</div>\
+					</div>\
+				</body>"
+			);
+			$("#2").css({"color":"red"});
+			$("#3").click(function() {
+				$("h1").hide();
+			});
+		});
+	</script>
+</html>
