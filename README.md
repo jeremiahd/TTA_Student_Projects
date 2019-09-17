@@ -4,4 +4,6 @@ Overview - This folder is from the Overview of Software Development course.  The
 
 HTMLCSS - This folder is from the HTML5 and CSS3 course.  The final project from this class is in my jeremiahd.github.io. repository, as it is hosted by github.  It can be viewed at https://jeremiahd.github.io.
 
-Javascript - This folder is from the Javascript course.
+Javascript - This folder is from the Javascript course. It is full of javascript Nonsense.
+
+SQL - Both the TA Basic SQL Projects and regular SQL folder.
