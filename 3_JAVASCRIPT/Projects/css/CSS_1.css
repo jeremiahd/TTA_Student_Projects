@@ -16,7 +16,7 @@ form:hover {
 label {
 	font-family: Helvetica, sans-serif;
 	color: #fff;
-	font-size: 1.05em;
+	font-size: 1vw;
 	font-weight: 400;
 }
 input[type="text"], input[type="date"] {

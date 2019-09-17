@@ -59,6 +59,11 @@ function getVeg(runningTotal, text1) {
 			text1 = text1 +=vegArray[j].value+"<br>";
 		}
 	vegTotal = selectedVeg.length;
+	// if we are having a special that offers a free meat topping, that
+	// obviously means free vegetables too...
+	// this one's for you alan
+	if(vegTotal>0) vegTotal--;
+	// ////////////////////////////////////////////////////////////////
 	runningTotal += vegTotal;
 	console.log("total selected veg items: "+vegTotal);
 	console.log("veg text1: "+text1);

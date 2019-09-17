@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Step 310</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<p id="XML_Example"></p>
+		<script>
+			var XML_Parser, XML_Document;
+			var Movie = 
+				"<student>"+
+					"<name>Jeremiah Davis</name>"+
+					"<add1>1234 Abcd St.</add1>"+
+					"<add2>Portland, OR 97230</add2>"+
+					"<phone>(503)111-2222</phone>"+
+				"</student>"
+			;
+			
+			XML_Parser = new DOMParser();
+			XML_Document = XML_Parser.parseFromString(Movie,"text/html");
+			
+			document.getElementById("XML_Example").innerHTML =
+				XML_Document.getElementsByTagName("add1")[0].childNodes[0].nodeValue;
+		</script>
+	</body>
+</html>
