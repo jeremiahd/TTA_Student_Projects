@@ -1,3 +1,4 @@
+use Library
 /* Question 1 */
 CREATE PROC question1
 AS
