@@ -82,7 +82,7 @@ function getReceipt() {
 	var output = order.size + ": $"+order.sizeTotal.toFixed(2)+"<br /><br />";
 	output += order.meats.length + " meats: $"+order.meatTotal.toFixed(2)+"<br />";
 	output += order.veg.length + " veg: $"+order.vegTotal.toFixed(2)+"<br /><br />";
-	output += "TOTAL: "+order.total();
+	output += "TOTAL: $"+order.total();
 	
 	// output order details
 	document.getElementById("output").innerHTML = output;
