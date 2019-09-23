@@ -6,6 +6,6 @@ HTMLCSS - This folder is from the HTML5 and CSS3 course.  The final project from
 
 Javascript - This folder is from the Javascript course. There are basic HTML/js exercises in the base directory, and more complex javascript projects in the 'Projects' dir.
 
-SQL - .sql files from the database course. This course was a lot of fun, there are some great select/join and group examples in here.  Also TSQL procedure examples.
+SQL - .sql files from the database course. This course was a lot of fun, there are some great SELECT/JOIN and GROUP BY examples in here.  Also TSQL procedure examples.
 
 Python - Python project files.
