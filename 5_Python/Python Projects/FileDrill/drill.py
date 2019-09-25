@@ -14,10 +14,9 @@ if __name__ == "__main__":
         fullPath = os.path.join(path, file)
         fileExt = os.path.splitext(file)[1]
         
-        # ask the os when the last modification was, convert to local time, and set the time format
-        lastMod = time.strftime( "%m-%d-%Y %H:%M:%S", time.localtime(os.path.getmtime(file)) )
-        
         # only output .txt files
         if fileExt == ".txt":
+            # ask the os when the last modification was, convert to local time, and set the time format
+            lastMod = time.strftime( "%m-%d-%Y %H:%M:%S", time.localtime(os.path.getmtime(file)) )
             print( "{} - {}".format(lastMod, fullPath) )
     
