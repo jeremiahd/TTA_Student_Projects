@@ -1,0 +1,195 @@
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> myList = [2, 3, 4]
+>>> len(myList)
+3
+>>> for i in myList:
+	print(myList[i])
+
+	
+4
+Traceback (most recent call last):
+  File "<pyshell#4>", line 2, in <module>
+    print(myList[i])
+IndexError: list index out of range
+>>> for i in myList:
+	print(i)
+
+	
+2
+3
+4
+>>> myList[1]
+3
+>>> myList.append(5)
+>>> myList
+[2, 3, 4, 5]
+>>> for i in myList:
+	myList.append(i)
+
+	
+
+=============================== RESTART: Shell ===============================
+>>> myList = [2,3,4]
+>>> myList.append(5)
+
+>>> myDictionary = {'index1': 1, 'index2': 2, 'index3':355}
+>>> mydictionary
+Traceback (most recent call last):
+  File "<pyshell#47>", line 1, in <module>
+    mydictionary
+NameError: name 'mydictionary' is not defined
+>>> myDictionary
+{'index1': 1, 'index2': 2, 'index3': 355}
+>>> myDictionary['index2']
+2
+>>> dic_users = {'em_1234': {'fname': 'jeremiah', 'lname': 'davis', 'phone': '123-456-7890'}, 'em1235': {'fname': 'bob', 'lname': 'smith', 'phone': '0987-654-321'} }
+>>> dic_users
+{'em_1234': {'fname': 'jeremiah', 'lname': 'davis', 'phone': '123-456-7890'}, 'em1235': {'fname': 'bob', 'lname': 'smith', 'phone': '0987-654-321'}}
+>>> dic_users['em_1235']
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    dic_users['em_1235']
+KeyError: 'em_1235'
+>>> print(dic_users['em_1235'])
+Traceback (most recent call last):
+  File "<pyshell#53>", line 1, in <module>
+    print(dic_users['em_1235'])
+KeyError: 'em_1235'
+>>> print(dic_users['em1235'])
+{'fname': 'bob', 'lname': 'smith', 'phone': '0987-654-321'}
+>>> 
+=============================== RESTART: Shell ===============================
+>>> dic_users = {'em_1234': {'fname': 'jeremiah', 'lname': 'davis', 'phone': '123-456-7890'}, 'em_1235': {'fname': 'bob', 'lname': 'smith', 'phone': '0987-654-321'} }
+>>> print(dic_users['em_1235'])
+{'fname': 'bob', 'lname': 'smith', 'phone': '0987-654-321'}
+>>> print(dic_users['em_1235'].format())
+Traceback (most recent call last):
+  File "<pyshell#57>", line 1, in <module>
+    print(dic_users['em_1235'].format())
+AttributeError: 'dict' object has no attribute 'format'
+>>> print(dic_users['em_1235'].format)
+Traceback (most recent call last):
+  File "<pyshell#58>", line 1, in <module>
+    print(dic_users['em_1235'].format)
+AttributeError: 'dict' object has no attribute 'format'
+>>> print(dic_users['em_1235', 'phone'])
+Traceback (most recent call last):
+  File "<pyshell#59>", line 1, in <module>
+    print(dic_users['em_1235', 'phone'])
+KeyError: ('em_1235', 'phone')
+>>> print(dic_users['em_1235']['phone'])
+0987-654-321
+>>> print('User: {} {}', dic_users['em_1235']['fname'], dic_users['em_1235']['lname'] )
+User: {} {} bob smith
+>>> print('User: {} {}'.format( dic_users['em_1235']['fname'], dic_users['em_1235']['lname'] ) )
+User: bob smith
+>>> print('User: {} {}\nPhone: {}'.format(dic_users['em_1235']['fname'], dic_users['em_1235']['lname'], dic_users['em_1235']['phone']))
+User: bob smith
+Phone: 0987-654-321
+>>> answer = True
+>>> type(answer)
+<class 'bool'>
+>>> answer = False
+>>> if answer: print("HAH")
+
+>>> if not answer: print("HAH")
+
+HAH
+>>> num1 = 3
+>>> num2 = 1
+>>> answer = 'The answer is {}.'.format(num1 + num2)
+>>> print(answer)
+The answer is 4.
+>>> answer = 'The answer is {}.'.format(num1,  num2)
+>>> print(answer)
+The answer is 3.
+>>> truth1 = True
+>>> truth2 = False
+>>> print("The truth is always {}".format(truth2)
+
+      )
+The truth is always False
+>>> i = 0
+>>> for i in range(10):
+	print("{} iteration through the loop.".format(i))
+
+	
+0 iteration through the loop.
+1 iteration through the loop.
+2 iteration through the loop.
+3 iteration through the loop.
+4 iteration through the loop.
+5 iteration through the loop.
+6 iteration through the loop.
+7 iteration through the loop.
+8 iteration through the loop.
+9 iteration through the loop.
+>>> for j=0 in range(10):
+	print("{} iteration through the loop.".format(j))
+	
+SyntaxError: invalid syntax
+>>> 
+=============================== RESTART: Shell ===============================
+>>> i = 0
+>>> for i in range(10):
+	print("{} iteration through the loop.".format(i))
+	i+=1
+
+	
+0 iteration through the loop.
+1 iteration through the loop.
+2 iteration through the loop.
+3 iteration through the loop.
+4 iteration through the loop.
+5 iteration through the loop.
+6 iteration through the loop.
+7 iteration through the loop.
+8 iteration through the loop.
+9 iteration through the loop.
+>>> for 0 in range(10)
+SyntaxError: invalid syntax
+>>> for 0 in range(10):
+	print("test")
+	
+SyntaxError: can't assign to literal
+>>> for x in range(10):
+	print("{} iteration through the loop.".format(x)
+
+	      )
+	)
+	
+SyntaxError: invalid syntax
+>>> for x in range(10):
+	print("{} iteration through the loop.".format(x))
+
+	
+0 iteration through the loop.
+1 iteration through the loop.
+2 iteration through the loop.
+3 iteration through the loop.
+4 iteration through the loop.
+5 iteration through the loop.
+6 iteration through the loop.
+7 iteration through the loop.
+8 iteration through the loop.
+9 iteration through the loop.
+>>> i = 0
+>>> while i < 10
+SyntaxError: invalid syntax
+>>> while i < 10:
+	print("{} iteration through the loop.".format(i))
+	i+=1
+
+	
+0 iteration through the loop.
+1 iteration through the loop.
+2 iteration through the loop.
+3 iteration through the loop.
+4 iteration through the loop.
+5 iteration through the loop.
+6 iteration through the loop.
+7 iteration through the loop.
+8 iteration through the loop.
+9 iteration through the loop.
+>>> 
