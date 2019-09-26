@@ -53,7 +53,7 @@ def deleteAll():
         
 
 if __name__ == "__main__":
-    deleteAll()
     createDb()
+    deleteAll()
     storeFiles()
     displayData()
