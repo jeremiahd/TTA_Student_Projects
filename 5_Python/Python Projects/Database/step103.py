@@ -16,7 +16,6 @@ def createDb():
 
 # ask our os for all the files in this dir, store .txt names in db
 def storeFiles():
-    fileData = []
     path = os.getcwd()
     files = os.listdir(path)
     db = sqlite3.connect("files.db")
