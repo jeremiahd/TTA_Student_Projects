@@ -52,7 +52,7 @@ def fromDir(self):
     self.textFr.insert("1.0", self.fromDir)
 
 def toDir(self):
-    self.toDir = filedialog.askdirectory(initialdir = ".", title="Move FROM",
+    self.toDir = filedialog.askdirectory(initialdir = ".", title="Move TO",
                                          mustexist=True)
     self.textTo.delete("1.0", END)
     self.textTo.insert("1.0", self.toDir)
@@ -87,7 +87,7 @@ def execute(self):
             
         shutil.move(fullPath, self.toDir)
 
-    print("Exectution Complete")
+    print("Execution Complete")
     self.textFr.delete("1.0", END)
     self.textTo.delete("1.0", END)
         
